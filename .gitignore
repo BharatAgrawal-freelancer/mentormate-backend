@@ -1,0 +1,8 @@
+# Node modules folder ignore
+node_modules/
+
+# Environment file ignore
+.env
+
+.vscode/
+.idea/
