@@ -1,4 +1,4 @@
-const Mentee = require("../models/Mentee");
+const Mentee = require("../models/mentee");
 const cloudinary = require("../config/cloudinary");
 const sendEmail = require("../middlewares/emailService");
 const User = require("../models/user.js"); 

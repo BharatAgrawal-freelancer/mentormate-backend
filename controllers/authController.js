@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const userModel = require('../models/user.js');
-const Mentee = require("../models/Mentee");
+const Mentee = require("../models/mentee");
 const jwt = require('jsonwebtoken');
 const sendEmail = require('../middlewares/emailService.js');   
 
