@@ -21,8 +21,7 @@ const app = express();
 // CORS options
 const corsOptions = {
   origin: '*',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
 };
 
 // Middlewares
