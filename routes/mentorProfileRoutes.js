@@ -13,7 +13,7 @@ const authMiddleware = require("../middlewares/authMiddleware");
 
 const mentorRouter = express.Router();
 
-mentorRouter.get("/mentor-data",authMiddleware,  getMentors);
+mentorRouter.get("/mentor-data",  getMentors);
 
 
 mentorRouter.post("/get-mentor-profile", getMentorProfile); 

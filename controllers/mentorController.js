@@ -5,20 +5,13 @@ const ReviewRated = require("../models/reviewRated.js"); // adjust path if neede
 
 const getMentors = async (req, res) => {
   try {
-    const mentor = await Mentor.findOne({ userId: req.userId }).select(
+    const mentors = await Mentor.find().select(
       "userId name profilePhoto categories currentJob pricing rating bio"
     );
 
-    if (!mentor) {
-      return res.status(404).json({
-        success: false,
-        message: "Mentor profile not found"
-      });
-    }
-console.log(mentor)
     return res.status(200).json({
       success: true,
-      data: mentor   // ✅ object
+      mentors, // ✅ array
     });
 
   } catch (error) {
@@ -29,7 +22,6 @@ console.log(mentor)
     });
   }
 };
-
 
 
 

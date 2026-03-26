@@ -20,11 +20,13 @@ const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: '*',
+  origin: [
+    'http://localhost:5173',
+    'https://www.mentormate.dev'
+  ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };
-
 // Middlewares
 app.use(cors(corsOptions));
 app.use(express.json({ limit: "50mb" })); 
