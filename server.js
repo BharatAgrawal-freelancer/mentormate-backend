@@ -20,10 +20,7 @@ const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: [
-    'http://localhost:5173',
-    'https://www.mentormate.dev'
-  ],
+  origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };
